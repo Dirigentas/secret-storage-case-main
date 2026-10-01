@@ -19,6 +19,7 @@ Build and run with Docker:
 ```sh
 docker build -t secret-case .
 docker run -p 8080:8080 secret-case
+docker run -p 8080:8080 --env APP_ADMIN_PASSWORD=<value> secret-case
 ```
 
 Then visit [http://localhost:8080](http://localhost:8080). You'll be prompted for credentials.
