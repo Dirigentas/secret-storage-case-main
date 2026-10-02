@@ -58,3 +58,11 @@ public class HelloController {
                     .body(body);
     }
 }
+
+// Planned to mention during "show and tell", but wanted to mention it here just in case:
+// This above solution didn't address plain-text string comparison which is a huge security risk.
+// But in order to do that it starts to be a more complicated solution with dedicated "SecurityConfig" class 
+// which handles hashed password comparison and also all other problems which was solved in this solution.
+// So in the end HelloController would be left very clean with only few lines of code as it supposed to.
+
+
